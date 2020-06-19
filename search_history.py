@@ -175,8 +175,8 @@ ax = monthly_freq.plot(kind='bar',
                                     title="Monthly Frequency in 2019",color=colors)
 ax.set_xlabel("Months")
 ax.set_ylabel("Frequency watch times")
-st.pyplot()
-
+plt.savefig('monthly_freq.png')
+st.write(ax.figure)
 #for year of 2019, get monthly frequency
 
 #for year of 2019, which day of the week i watch the most
@@ -191,7 +191,7 @@ ax = daily_freq.plot(kind='bar',
 ax.set_xlabel("Days of the Week")
 ax.set_ylabel("Daily Frequency")
 st.subheader('Days of the Week')
-st.pyplot()
+st.write(ax.figure)
 
 #CHANNELS get top 10 most watched of all time
 st.write(watch_hist['channel_name'].value_counts())
@@ -211,7 +211,7 @@ ax = mostwatched.plot(kind='bar',
                                     title="Top 10 channels I watch",color=colors)
 ax.set_xlabel("Channels")
 ax.set_ylabel("Frequency")
-st.pyplot()
+st.write(ax.figure)
 
 
 

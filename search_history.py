@@ -26,11 +26,14 @@ search_df['Year'],search_df['Month']=search_df['time'].dt.year,search_df['time']
 search_df['Day']=search_df['time'].dt.day
 search_df['Day_of_week']=search_df['time'].dt.day_name()
 wordcloud2 = WordCloud(background_color="white").generate(' '.join(search_df['title']))
+
 print(wordcloud2)
 plt.imshow(wordcloud2, interpolation='bilinear')
 plt.axis("off")
 plt.show()
-st.pyplot()
+plt.savefig('wordcloud.png')
+st.image('wordcloud.png', format='PNG')
+#st.pyplot()
 
 
 #print(search_df['Year'],search_df['Month'])

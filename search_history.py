@@ -141,8 +141,8 @@ st.subheader("Monthly Watch Frequency in 2019")
 '''
 Conclusions: 
 It seems that June and July are where my watch frequencies seemed to spike. This could be due to my mid sem break falling around
-those months. I find it quite strange that my watch frequency from december to january was not really high as it seems that
-this was during the time of my internship. Therefore, I wasn't able to watch Youtube as often during these months. 
+those months. I find it quite strange that my watch frequency from December to January was not really high as it seems that
+this was during the time of my internship. Therefore, I can deduce that I wasn't able to watch Youtube as often during these months. 
 '''
 st.write(year_2019['Month'].value_counts())
 monthly_freq=year_2019['Month'].value_counts()
